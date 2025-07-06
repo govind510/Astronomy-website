@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AstroWorld - Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function checkAnswer() {
+      const q1 = document.querySelector('input[name="q1"]:checked').value;
+      let score = 0;
+      if (q1 === "c") score++;
+      alert("You got " + score + "/1 correct!");
+    }
+  </script>
+</head>
+<body>
+  <header><h1>Space Quiz</h1></header>
+  <main>
+    <form>
+      <p>1. Which is the largest planet in our Solar System?</p>
+      <label><input type="radio" name="q1" value="a"> Earth</label><br>
+      <label><input type="radio" name="q1" value="b"> Mars</label><br>
+      <label><input type="radio" name="q1" value="c"> Jupiter</label><br>
+      <button type="button" onclick="checkAnswer()">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
